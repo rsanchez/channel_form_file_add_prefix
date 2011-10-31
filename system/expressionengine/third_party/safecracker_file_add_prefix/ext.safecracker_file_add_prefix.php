@@ -101,7 +101,7 @@ class Safecracker_file_add_prefix_ext
 				
 				unset($_POST[$field['field_name'].'_prefix']);
 				
-				$_FILES[$field['field_name']]['name'] = $prefix.$_FILES[$field['field_name']]['name'];
+				$_FILES[$field['field_name']]['name'] = strtolower(str_replace(' ', '-', $prefix.$_FILES[$field['field_name']]['name']));
 			}
 		}
 	}
