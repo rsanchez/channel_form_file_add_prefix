@@ -1,14 +1,14 @@
-# SafeCracker File - Add Prefix to Filename #
+# Channel Form - Add Prefix to Filename
 
-Add a prefix to the filename of SafeCracker File field in a SafeCracker form.
+Add a prefix to the filename of [File field](https://ellislab.com/expressionengine/user-guide/add-ons/channel/custom_fields.html#file-field) in a [Channel Form](https://ellislab.com/expressionengine/user-guide/add-ons/channel/channel_form/).
 
 ## Installation
 
-* Copy the /system/expressionengine/third_party/safecracker_file_add_prefix/ folder to your /system/expressionengine/third_party/ folder
+* Copy the /system/expressionengine/third_party/channel_form_file_add_prefix/ folder to your /system/expressionengine/third_party/ folder
 
 ## Usage
-Add a field to your SafeCracker form, whose name is your SafeCracker File field name with _prefix at the end.
+Add a field to your Channel Field form, whose name is your File field name with _prefix at the end.
 
-	{exp:safecracker channel="site" return="my/form/ENTRY_ID"}
+	{exp:channel:form channel="site" return="my/form/ENTRY_ID"}
 		<input type="hidden" name="my_file_field_prefix" value="{username}_">
-	{/exp:safecracker}
+	{/exp:channel:form}
